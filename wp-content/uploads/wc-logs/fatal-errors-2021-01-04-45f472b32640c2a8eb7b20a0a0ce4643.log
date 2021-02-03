@@ -1,0 +1,6 @@
+2021-01-04T15:54:24+00:00 CRITICAL Call to undefined function get_field() in /home3/mycreative/foxstorytelling.com/wp-content/themes/simple-bootstrap 2/category-blog.php on line 13
+
+2021-01-04T18:07:25+00:00 CRITICAL Call to undefined function get_field() in /home3/mycreative/foxstorytelling.com/wp-content/themes/simple-bootstrap 2/category-blog.php on line 13
+
+2021-01-04T23:41:43+00:00 CRITICAL Call to undefined function get_field() in /home3/mycreative/foxstorytelling.com/wp-content/themes/simple-bootstrap 2/category-blog.php on line 13
+

@@ -1,0 +1,245 @@
+img {
+    max-width: 100%;
+}
+/* --  SCAFFOLDING / STRUCTURE  -- */
+.displayWidth {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.largeWidth {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 1900px;
+    margin: 0 auto 0;
+}
+.mediumWidth {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 1700px;
+    margin: 0 auto 0;
+}
+.smallWidth {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 1500px;
+    margin: 0 auto 0;
+}
+.displayHeight {
+    height: 100vh;
+}
+.halfHeight {
+    height: 50vh;
+}
+.quarterHeight {
+    height: 25vh;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rw80 {
+    display: flex;
+    flex-basis: 18%;
+    flex-wrap: wrap;
+}
+.rw75 {
+    display: flex;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+}
+.rw66 {
+    display: flex;
+    flex-basis: calc(66% / 3);
+    flex-wrap: wrap;
+}
+.rw50 {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+.rw45 {
+    display: flex;
+    flex-basis: 45%;
+    flex-wrap: wrap;
+}
+.rw40 {
+    display: flex;
+    flex-basis: 40%;
+    flex-wrap: wrap;
+}
+.rw33 {
+    display: flex;
+    flex-basis: calc(100% / 3);
+    flex-wrap: wrap;
+}
+.rw25 {
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+}
+.rw20 {
+    display: flex;
+    flex-basis: 20%;
+    flex-wrap: wrap;
+}
+.rw15 {
+    display: flex;
+    flex-basis: 15%;
+    flex-wrap: wrap;
+}
+.rw10 {
+    display: flex;
+    flex-basis: 10%;
+    flex-wrap: wrap;
+}
+
+
+/* -- TYPOGRAPHY -- */
+body, html, p, h1, h2, h3, h4, h5, h6, ul, li, ol {
+    font-family: 'Montserrat', arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}  
+nav {
+    display: flex;
+}
+nav #site_nav {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: #F8F8F8;
+}
+nav #site_nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    list-style: none;
+    align-content: center;
+    justify-content: start;
+}
+nav #site_nav ul li {
+    margin: 5px 20px;
+}
+nav #site_nav ul li.top_level {
+    background: #FFF;
+}
+nav #site_nav ul li.top_level .second_level {
+    padding-left: 0;
+}
+nav #site_nav > ul > li .nav_cat {
+    background: #FFF;
+    text-align: center;
+    font-size: .5rem;
+    width: calc(50% - 16px);
+    display: block;
+    margin: 8px auto;
+}
+nav #site_nav > ul{
+    max-width: 1900px;
+    margin: 0 auto;
+}
+nav #site_nav > ul li {
+    align-self: center;
+    font-weight: 700;
+    color: #0A4A7B;
+}
+nav #site_nav > ul li.top_level .nav_cat {
+    background: #FFF;
+    position: relative;
+    z-index: 1000;
+    
+}
+nav #site_nav > ul li.top_level ul {
+    border-top: 2px solid #CCC;
+    margin-top: -15px;
+    position: relative;
+    padding-top: 8px;
+    z-index: 999;
+}
+.nav_right {
+    margin: 0 0 0 auto !important;
+    display: flex;
+    flex-direction: row;
+}
+#mcNav {
+      width: 75px;
+      height: auto;
+}
+.socialNav {
+    display:flex;
+}
+.socialNav li{
+    padding: 0;
+}
+.socialNav img{
+    width: 30px;
+    height: auto;
+    flex-basis: calc(0% + 30px);
+}
+
+/* ------- CAROUSEL ---------- */
+.carousel {
+    position: relative;
+}
+.carousel .dskCarousel img {
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+section.carousel .dskCarousel {
+    background: #000;
+    margin-top: 80px;
+}
+section.carousel .carouselFrame {
+    background: url(../IMG/carouselFrame.png) no-repeat center top;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 900;
+    background-size: cover;
+    width: 100%;
+}
+section.carousel .slide1 {
+    background: url(../IMG/NEX_bkgrd.png) center center;
+    background-size: cover;
+    width: 100%;
+    padding: 20px 0 0;
+    text-align: center;
+}
+.slideCta {
+    align-self: center
+}
+.and {
+    margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+    z-index: 1000;
+    align-self: center;
+}
+nav #site_nav ul .socialNav li {
+    margin: 0 3px 0;
+}
+/* -- EMAIL SIGNUP -- */
+.emailSignup {
+    background: #e21e2d;
+    min-height: 100px;
+    padding: 20px;
+}
+
+ 

@@ -1,0 +1,4 @@
+[22-May-2019 12:03:09 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home3/mycreative/foxstorytelling.com/wp-content/themes/twentyseventeen/inc/back-compat.php on line 26
+[22-May-2019 18:03:38 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home3/mycreative/foxstorytelling.com/wp-content/themes/twentyseventeen/inc/back-compat.php on line 26
+[11-Jun-2019 18:45:36 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home3/mycreative/foxstorytelling.com/wp-content/themes/twentyseventeen/inc/back-compat.php on line 26
+[11-Jun-2019 18:50:23 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home3/mycreative/foxstorytelling.com/wp-content/themes/twentyseventeen/inc/back-compat.php on line 26

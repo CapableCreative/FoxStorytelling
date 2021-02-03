@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.12.6//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+DTSTART:20070311T020000
+TZNAME:CDT
+TZOFFSETTO:-0500
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+DTSTART:20071104T020000
+TZNAME:CST
+TZOFFSETTO:-0600
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+CREATED:20180718T142054Z
+UID:67C13933-8167-4DF0-BED3-C5C68B7E3A65
+DTEND;TZID=America/Chicago:20180726T130000
+TRANSP:OPAQUE
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Live Q&A: Social Media for Churches
+DTSTART;TZID=America/Chicago:20180726T120000
+DTSTAMP:20180718T142956Z
+LOCATION:http://www.umcom.org/learn/live-qa-social-media-for-churches-pr
+ t2
+SEQUENCE:0
+DESCRIPTION:Join our free Live Q&A on July 26 at 12:00 pm CT!\nTelling y
+ our church’s story online provides an opportunity to connect with people
+  who are searching for deeper meaning in life. In fact\, recent research
+  revealed that more than 90% of spiritual seekers use smartphones and In
+ ternet daily\, while 83% use social media every day.\n\nWhether you are 
+ searching for in-depth information or just getting started with a Facebo
+ ok page\, here is a chance to ask the experts at United Methodist Commun
+ ications about social media and how your church can utilize it for meani
+ ngful ministry and effective outreach.\n\nThis live learning session is 
+ a continuation of the Social Media Q&A held earlier this year\, and is a
+  further opportunity to answer your remaining questions about Facebook\,
+  Twitter and Instagram.
+BEGIN:VALARM
+X-WR-ALARMUID:1A311F76-963D-4979-9113-E3A63BF8D544
+UID:1A311F76-963D-4979-9113-E3A63BF8D544
+TRIGGER:-PT1H
+DESCRIPTION:Event reminder
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

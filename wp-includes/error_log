@@ -1,0 +1,10 @@
+[19-Nov-2018 17:41:21 America/Chicago] PHP Fatal error:  Call to undefined function is_robots() in /home3/mycreative/foxstorytelling.com/wp-includes/template-loader.php on line 28
+[13-Dec-2018 22:53:07 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home3/mycreative/foxstorytelling.com/wp-includes/class-walker-nav-menu.php on line 17
+[18-Aug-2020 08:19:46 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home3/mycreative/foxstorytelling.com/wp-includes/locale.php on line 10
+[16-Sep-2020 14:31:12 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home3/mycreative/foxstorytelling.com/wp-includes/class-walker-nav-menu.php on line 17
+[27-Nov-2020 00:57:34 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home3/mycreative/foxstorytelling.com/wp-includes/functions.php on line 8
+[27-Nov-2020 00:57:34 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home3/mycreative/foxstorytelling.com/wp-includes/functions.php on line 8
+[27-Nov-2020 00:57:34 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php56/lib/php') in /home3/mycreative/foxstorytelling.com/wp-includes/functions.php on line 8
+[26-Jan-2021 05:20:54 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home3/mycreative/foxstorytelling.com/wp-includes/functions.php on line 8
+[26-Jan-2021 05:20:54 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home3/mycreative/foxstorytelling.com/wp-includes/functions.php on line 8
+[26-Jan-2021 05:20:54 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php56/lib/php') in /home3/mycreative/foxstorytelling.com/wp-includes/functions.php on line 8

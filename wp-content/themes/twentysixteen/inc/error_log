@@ -1,0 +1,2 @@
+[11-Jun-2019 14:36:10 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home3/mycreative/foxstorytelling.com/wp-content/themes/twentysixteen/inc/template-tags.php on line 178
+[11-Jun-2019 15:46:54 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home3/mycreative/foxstorytelling.com/wp-content/themes/twentysixteen/inc/customizer.php on line 73

@@ -1,0 +1,10 @@
+2021-01-08T03:00:29+00:00 CRITICAL Call to undefined function wc_get_cart_item_data_hash() in /home3/mycreative/foxstorytelling.com/wp-content/plugins/woocommerce/includes/class-wc-cart-session.php on line 132
+
+2021-01-08T03:00:38+00:00 CRITICAL Call to undefined function wc_get_cart_item_data_hash() in /home3/mycreative/foxstorytelling.com/wp-content/plugins/woocommerce/includes/class-wc-cart-session.php on line 132
+
+2021-01-08T03:04:21+00:00 CRITICAL Call to undefined function wc_get_cart_item_data_hash() in /home3/mycreative/foxstorytelling.com/wp-content/plugins/woocommerce/includes/class-wc-cart-session.php on line 132
+
+2021-01-08T14:53:42+00:00 CRITICAL Call to undefined function get_field() in /home3/mycreative/foxstorytelling.com/wp-content/themes/simple-bootstrap 2/category-blog.php on line 13
+
+2021-01-08T16:32:52+00:00 CRITICAL Call to undefined function get_field() in /home3/mycreative/foxstorytelling.com/wp-content/themes/simple-bootstrap 2/category-blog.php on line 13
+

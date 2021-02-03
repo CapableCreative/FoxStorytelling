@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700,700i,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700,700i,900" rel="stylesheet">
+<style>
+	
+#slf-wrapper .slf-panels{display:none;}	
+	
+body, #slf-wrapper div, #slf-wrapper h1, #slf-wrapper h2, #slf-wrapper h3, #slf-wrapper h4{
+	margin: 0px; padding: 0px;
+	font-family: 'Raleway', 'Montserrat', 'Helvetica Neue', helvetica, sans-serif;}
+#slf-wrapper{position: relative;}
+#slf-wrapper, body{background: #CCC;}
+#slf-wrapper h2{font-weight: 900; color: #e21e2d;}
+#slf-wrapper section{margin: 0px;}
+#slf-wrapper img{width: 100%; height: inherit;}
+#slf-wrapper, #slf-wrapper p{font-size: 16px;line-height: 24px;}
+	@media (max-width: 600px){#slf-wrapper .slf-section-4{font-size: 12px !important; line-height: 18px !important;}}
+#slf-wrapper .btn{font-family: 'Raleway', 'Montserrat', 'Helvetica Neue', helvetica, sans-serif;
+	background: #1c91b3;color: #FFF;padding: 5px 10px;font-weight: 900;border: none;
+	letter-spacing: 1px;font-size: 20px;margin: 15px auto 0px;}
+	#slf-wrapper .btn:hover{background: #069;}
+#slf-wrapper .btn-red{
+	background: #e21e2d;transition: background .25s ease-in-out;}
+	#slf-wrapper .btn-red:hover{background: #900;}
+#slf-wrapper .home-section, #slf-wrapper .home-section h2, #slf-wrapper .home-section p{
+	text-align: center;}
+#slf-wrapper .cmpt-heading{
+	background: url("http://folio.umc.org/rs/078-JXQ-643/images/cmpt-first.jpg") no-repeat center center;
+	background-size: cover;padding-bottom:20px;}
+	#slf-wrapper .cmpt-heading h1{
+	text-align: center;padding: 75px 0px 20px;color: #FFF;}
+	#slf-wrapper .cmpt-heading h2{
+		font-family: 'Trade Gothic', 'Oswald', 'Bebas Neue', 'Steelfish', Verdana, helvetica, arial, sans-serif;
+		width: 100%;font-size: 30px;letter-spacing: 1px;text-shadow: -2px 2px 0px #000;opacity: 0.8;
+		background: #1c91b3;color: #FFF;text-align: center;padding: 10px 0px;margin-bottom: 20px;}
+
+@media (max-width: 960px){#slf-wrapper .cmpt-heading h2{font-size: 20px !important;}}
+	
+/*------- RESPONSIVE CLASSES --------------------*/
+
+@media (max-width: 768px){#slf-wrapper .hidden-tablet{display: none;}}
+@media (max-width: 468px){#slf-wrapper .hidden-phone{display: none;}}
+@media (min-width: 768px){#slf-wrapper .hidden-desktop{display: none;}}
+
+/* ===================== FOLDING SIZES =================== */	
+		
+#slf-wrapper .fullwidth{width: 100%;clear: both;}
+#slf-wrapper .containedwidth{clear: both;margin: 0px auto; min-width:440px;}
+#slf-wrapper .fullwidth:after, #slf-wrapper .containedwidth:after, .plus-bkgrd:after{content: "";display: table;clear: both;}
+#slf-wrapper .halfwidth{width: 50%;float:left;}
+#slf-wrapper .thirdwidth{width: 33%;float: left;}
+#slf-wrapper .fourthwidth{width: 25%;float: left;}		
+/* #slf-wrapper img{max-width: 90%;height: inherit;margin: 0px auto;} */
+
+@media (max-width: 768px){
+	#slf-wrapper .halfwidth{width: 100% !important;}
+	#slf-wrapper .thirdwidth{width: 100% !important;}
+	/*#slf-wrapper .fourthwidth{width: 50% !important;}*/}	
+	
+/*===================== SECTIONS ===================== */
+
+#slf-wrapper section{padding: 0px 20px 20px;margin: 0px;}
+
+#slf-wrapper section.slf-section-1{padding:0px;background: #FFF;}
+#slf-wrapper section.slf-section-2{background: #eaeaea;border-bottom: 5px solid #e21e2d;}
+#slf-wrapper section.slf-section-3{padding: 0px !important; background: #FFF;display:block;}
+	#slf-wrapper section.slf-section-3 .fourthwidth{display:block;background: #FFF;clear: both;}
+#slf-wrapper section.slf-section-4{background: #FFF;}
+#slf-wrapper section.slf-section-4 .cube{width: 100%; background: #FFF;border-radius:30px;padding: 32% 0px;border: 5px solid #000;position: relative;z-index: 2;box-shadow: 0px 0px 20px #666;}
+	@media (max-width: 550px){#slf-wrapper section.slf-section-4 .cube{padding: 40% 0px; margin-top: 7px;}}
+	#slf-wrapper section.slf-section-4 .rectangle{border: 5px solid #000;background: #FFF;height:90px;width:95%;margin-top: 20%;padding-top: 10%;}
+	
+/* ---------------- REMOVES BORDER FOR ADJACENT RECTANGLES (SO BORDERS AREN'T DOUBLED) ------------------*/
+		#slf-wrapper section.slf-section-4 .rectangle.rectangle-no-right{border-right:none !important;padding-right: 5px;}	
+		#slf-wrapper section.slf-section-4 .rectangle.rectangle-no-left{border-left:none !important;padding-right: 5px;}
+		#slf-wrapper section.slf-section-4 .rectangle.rectangle-no-x{border-left:none !important;padding-right: 5px; padding-left: 5px; border-right: none !important;}	
+		#slf-wrapper section.slf-section-4 .rectangle.rectangle-no-top{border-top:none !important;padding-top: 5px;}
+		#slf-wrapper section.slf-section-4 .rectangle.rectangle-no-bottom{border-bottom:none !important;padding-bottom: 5px;}
+		
+/* ---------------- VARIOUS CORNER PIECES ------------------*/		
+		#slf-wrapper section.slf-section-4 .rectangle.right-corner-down{border-radius: 0px 30px 0px 0px;padding-bottom: 25%;}
+		#slf-wrapper section.slf-section-4 .rectangle.right-corner-up{border-radius: 0px 0px 30px 0px;padding-top: 30%; margin-top: 0%;padding-bottom: 5px;}
+		#slf-wrapper section.slf-section-4 .rectangle.left-corner-down{border-radius: 30px 0px 0px 0px;padding-bottom: 25%;}
+		#slf-wrapper section.slf-section-4 .rectangle.left-corner-up{border-radius: 0px 0px 0px 30px;padding-top: 30%; margin-top: 0%;padding-bottom: 5px;}	
+		#slf-wrapper section.slf-section-4 .rectangle.left-corner-down-once{border-radius: 30px 0px 0px 0px;padding-bottom: 0%;}
+		#slf-wrapper section.slf-section-4 .rectangle.right-corner-down-once{border-radius: 0px 30px 0px 0px;padding-bottom: 0%;}
+		#slf-wrapper section.slf-section-4 .rectangle.right-corner-up-once{border-radius: 0px 0px 30px 0px;padding-bottom: 0%;}
+
+/*
+------------------------------------------------------------
+POPUPS
+------------------------------------------------------------
+*/
+
+#slf-wrapper .slf-popup{
+	padding-top: 300px;
+	margin: 40px auto;
+	background-size: cover !important;
+    }	
+	.slf-popup-stat{
+	padding: 20px !important;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.75);
+	min-height: 0px;	
+	}
+	.slf-popup-stat h3{color: #e8aa23; font-weight: 900; font-size: 36px;line-height: 40px;}
+	.slf-popup-stat h3.number{font-size: 78px;line-height: 78px; position: relative; top: -200px;height: 0px;color: #00a3bf;}
+	.slf-popup-stat p{color: #FFF; font-size: 130% !important;}
+	
+</style>
+</head>
+	<body>
+		<div id="slf-wrapper" style="max-width: 768px; margin: 0px auto; text-align:center; width: 100%;">
+
+<!------------------- POPUPS ------------------->		
+			<section class="slf-panels">
+				<div class="slf-popup slf-popup-1" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">Church Leaders</h3>
+						<p>We provide tools, resources, training and services to equip and support Church leaders.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-2" style="background: url('path-img/popups/cl-1.jpg') no-repeat center center;">
+					<div class="slf-popup-stat">
+						<h3>Utilizing Research Findings</h3>
+						<p>United Methodist Communications worked with the Bama Group to find out why young adults go to church. Bama president David Kinnaman said the survey found spiritual 
+						growth and genuine community are the top motivators for attending church.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-3" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">835</h3>
+						<p>Local churches gained online presence through web ministry services</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-4" style="background: url('path-img/popups/cl-2.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Sharing Knowledge</h3>
+						<p>United Methodist Communications made a "Rethink Church" presentation at the Professional Seminar for Church Communications Offices in April. Staff also
+						met with Reverend Father Lombardi, S.J., Director of the Holy See Press Office who leads comprehensive communications for the Vatican and the Pope,to
+						share best practices in church communications.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-5" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">37,650</h3>
+						<p>MyCom subscribers received tips, tools and techniques for communications </p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-6" style="background: url('path-img/popups/cl-3.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Preparing Deligates</h3>
+						<p>United Methodist Communications helped delegates prepare for the 2016 General Conference by hosting a pre-General Conference briefing in Portland, 
+						Oregon, as well as helping to plan and staff briefings in the Philippines, Zimbabwe, Democratic Republic of Congo, Cote d’Ivoire, and Russia. </p>
+					</div>
+				</div>	
+				<div class="slf-popup slf-popup-7" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">3,396</h3>
+						<p>Church leaders built communication skills through training. </p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-8" style="background: url('path-img/popups/cl-4.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Serving our Audiences</h3>
+						<p>We released new research from United Methodist Communications showing that technology adoption rates by United Methodist pastors and leaders is as high or higher 
+						than average. Assessing attitudes and usage of emerging forms of digital communications helps inform our work.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-9" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">4.2<br />million</h3>
+						<p>Special Sunday envelopes facilitated additional giving.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-10" style="background: url('path-img/popups/cl-5.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Connecting General Conference</h3>
+						<p>Supporting the technology and production needs of General Conference required 2-3 years of advance preparation. The technology team built a 200+ device 
+						business network within 72 hours, operated it for two weeks and dismantled it within 12-24 hours.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-11" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">989</h3>
+						<p>Hispanic/Latino church leaders received an e-newsletter tailored to their ministries.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-12" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">1,142</h3>
+						<p>Local churches received resources to support outreach activities.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-13" style="background: url('path-img/popups/cl-6.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Resourcing Local Churches</h3>
+						<p>At the United Methodist Communications’ "Build Our Global Church" display at General Conference, you could learn to tweet, share on social media what you
+						love about your church using the hashtag #TellUMComyourstory, or find resources to help with communications ministry. </p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-14" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">1.53<br />million</h3>
+						<p>Visits to UMCom.org shared resources and information.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-15" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">Church Members</h3>
+						<p>We tell the story of the people of the United Methodist Church at work in the world.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-16" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">4.57<br />million</h3>
+						<p>UMC.org visitors viewed meaningful content on 17 million pages.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-17" style="background: url('path-img/popups/cl-7.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Keeping Members Informed</h3>
+						<p>Helping the global church stay on top of what’s happening at General Conference was an all-hands-on-deck event that involved production, technology, news reporting, 
+						media relations, photography, social media, messaging, InfoServ, live streaming, development of a mobile app and more. Pictured is technical producer Andrew Jensen. </p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-18" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">120,000</h3>
+						<p>Interpreter subscribers had access to 217 inspirational articles.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-19" style="background: url('path-img/popups/cl-8.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Unifying in Prayer</h3>
+						<p>United Methodist Communications joined in partnership with the Council of Bishops, the Upper Room, United Methodist Women, and United Methodist Men to launch the
+						"Praying Our Way Forward" initiative for the work of the Commission on a Way Forward and for the mission of The United Methodist Church to make disciples of Jesus Christ for the transformation of the world.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-20" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">343</h3>
+						<p>Videos on 3 YouTube channels inspired and informed viewers.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-21" style="background: url('path-img/popups/cl-9.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Communicating During Disasters</h3>
+						<p>After Typhoon Haima damaged communication infrastructure in the Philippines, a critical component to relief efforts, United Methodist Communications' 
+						provided sources of electricity and technical assistance for ham radio operators. 
+						Pastor Jucar Tabunan (right) receives a Freeplay solar radio from April Mercado, special projects manager for ICT4D Church Initiatives.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-22" style="background: url('path-img/popups/cl-10.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Engaging Online in New Ways</h3>
+						<p>From our first Facebook live event, the General Conference celebration of Imagine No Malaria, to our first live poll that reached almost a half million people, this hot social media trend is helping us boost our reach and 
+						engagement and provide new opportunities for creative live content and interaction.</p>
+					</div>
+				</div>	
+				<div class="slf-popup slf-popup-23" style="background: url('path-img/popups/cl-11.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Walking With Wesley</h3>
+						<p>Kathleen Barry and Joe Iovino brought history to life as they walked in the footsteps of John and Charles Wesley and chronicled their journey during the 2016 Wesley Pilgrimage.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-24" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">724</h3>
+						<p>Non-English articles informed French, Hispanic and Korean speaking members.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-24" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">21,500</h3>
+						<p>Satisfied customers received answers from InfoServ.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-25" style="background: url('path-img/popups/cl-12.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Growing Communication Channels</h3>
+						<p>In April 2016, United Methodist Communications launched a French-language portal at UMC.org, the official website of The United Methodist Church. 
+						The site provides resources, history, news and other information about the denomination to support the French-speaking church.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-26" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">794,446</h3>
+						<p>People follow social media channels managed by United Methodist Communications.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-27" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">62.28<br />million</h3>
+						<p>People were reached with captivating content on social media.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-28" style="background: url('path-img/popups/cl-13.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3>Nurturing Spiritual Development</h3>
+						<p>A 30-minute monthly podcast hosted by Joe Iovino, Get Your Spirit in Shape, was launched in January. 
+						The podcast features conversations with leaders, authors, and others who offer spiritual nutrition for everyday life.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-29" style="background: url('path-img/popups/cl-14.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Imagining No Maleria</h3>
+						<p>United Methodist Communications helped produce a 12-minute multimedia celebration of Imagine No Malaria at the denomination’s quadrennial
+						legislative gathering. The event, which marked the end of the global multi-year grassroots initiative, featured a highlights video, dancers
+						and a performance by “American Idol” Jeremy Rosado. Since 2010, the people of The United Methodist Church have successfully raised more than 
+						$70 million for Imagine No Malaria to address the impact of malaria in Africa through prevention, treatment, communication and education.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-30" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">The World</h3>
+						<p>We share messages of hope and invitation with the world.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-31" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">164.36<br />million</h3>
+						<p>National advertising impressions extended invitation.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-32" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">299</h3>
+						<p>Grants provided digital advertising for local churches.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-33" style="background: url('path-img/popups/cl-15.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Telling Our Story</h3>
+						<p>Advertising in the airports, the MAX train, and other places around Portland, Ore. helped to tell our story to local residents, 
+						as well as to welcome United Methodists from around the world to General Conference.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-34" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">214,930</h3>
+						<p>Lives were enriched by work completed during Rethink Church community event grants.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-35" style="background: url('path-img/popups/cl-16.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Supporting People in Need</h3>
+						<p>When floods ravaged West Virginia and Louisiana, United Methodist Communications collaborated with those annual 
+						conferences to share advertising messages of hope, calls for donations, news coverage and on-site communication support.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-36" style="background: url('path-img/popups/cl-17.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Reaching Out To the World</h3>
+						<p>September saw the launch of a new four-part advertising series via TV, billboards, digital platforms and mobile devices. 
+						The ads highlighted the church’s role in disaster response, education and hunger relief and finding the true meaning of Christmas by lending a hand to a neighbor in need. </p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-37" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">11,215</h3>
+						<p>Cups of hot cocoa offered a warm invitation to people in 9 cities.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-38" style="background: url('path-img/popups/cl-18.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Offering Community</h3>
+						<p>Jennifer Rodia and the Rev. Gary Henderson appeared on the Balancing Act to talk about loneliness, especially during the holidays, 
+						and how church provides a deeper, more meaningful kind of community where you can explore your faith with others. </p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-39" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">2.51<br />million</h3>
+						<p>Visits to Find-A-Church’s 32,148 profiles offered local church connections.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-40" style="background: url('path-img/popups/cl-19.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Warming Hearts With Cocoa</h3>
+						<p>As commuters, shoppers and eventgoers crowded the most trafficked areas of nine major U.S. cities during the holiday rush, 
+						street teams wearing state-of-the-art “jetpack” beverage dispensers handed out tasty cups of hot cocoa bearing the “Rethink Church” message, 
+						along with an invitation to visit a United Methodist church for Christmas. Mobile billboards and national advertising rounded out the campaign.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-41" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">11,550</h3>
+						<p>People wore branded T-shirts to build awareness of the denomination.</p>
+					</div>
+				</div>	
+				<div class="slf-popup slf-popup-42" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">News Service</h3>
+						<p>We bring you a global perspective on what's happening in the church.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-43" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number" style="font-size: 900%">7</h3>
+						<p>Language translations of General Conference news provided information to diverse audiences.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-44" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">20,346</h3>
+						<p>UMNS Daily Digest subscribers received in-depth news updates.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-45" style="background: url('path-img/popups/cl-20.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Reporting From East Congo</h3>
+						<p>A series of eight stories and seven photo slideshows from news writer Kathy Gilbert and photographer Mike DuBose focused attention 
+						on the ministries and people of the flourishing East Congo Conference, the denomination’s newest episcopal area. Since much of the area has no roads, 
+						the duo traveled by whatever means necessary: sometimes by boat overnight, sometimes by car through stretches of volcanic rubble, sometimes by motorcycle deep into the forest.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-46" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">472</h3>
+						<p>United Methodist News Service stories kept readers informed.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-47" style="background: url('path-img/popups/cl-21.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Highlighting Churches in Cuba</h3>
+						<p>Linda Bloom and Mike DuBose spent a week in November traveling throughout Cuba to meet with pastors, members and missionaries to report on how the Methodist Church in Cuba is 
+						thriving -- and how it has an identity all its own.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-48" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number">The Team</h3>
+						<p>We are truth seekers and storytellers who create avenues to bear witness to Christ.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-49" style="background: url('path-img/popups/cl-22.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Celebrating Achievements</h3>
+						<p>Our work in 2016 garnered 27 awards from the United Methodist Association of Communicators, including 4 Best of Class awards, 14 first-place awards, 
+						6 second-place awards and 3 third-place awards. Pictured above are those in attendance at the annual UMAC meeting.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-50" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number" style="font-size: 700%;">104</h3>
+						<p>Employees supported the denomination's diverse communication needs.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-51" style="background: url('path-img/popups/cl-23.jpg') no-repeat left top;">
+					<div class="slf-popup-stat">
+						<h3>Caring for Neighbors</h3>
+						<p>Our staff cares not only about the work we do worldwide, but also our local community. In 2016, employees generously gave of their time, talents and finances to support meaningful work taking place in
+						organizations such as United Way of Metropolitan Nashville, Nashville Rescue Mission, Last Minute Toy Store, Bethlehem Centers of Nashville and Salvation Army Angel Tree.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-52" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number" style="font-size: 700%;">767</h3>
+						<p>Cumulative years of service have enhanced our knowledge, skills and expertise.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-53" style="background: url('path-img/popups/cl-24.jpg') no-repeat left top;background-size:contain !important;">
+					<div class="slf-popup-stat" style="background-color: #000 !important;">
+						<h3>Welcoming New Team Members</h3>
+						<p>Nine individuals joined United Methodist Communications in 2016, offering their talent and experience to the training, marketing, communications, finance, customer experience and content teams. 
+						The new employees are (pictured left to right) Jeremy Brown, Dan Hoag, Jane Massey, Tyrus Sturgis, Elle Turner, Madeline Dusenberry, Robert Pugh and Julie Dwyer.</p>
+					</div>
+				</div>
+				<div class="slf-popup slf-popup-52" style="background: url('path-img/popups/num-bkgrd.jpg') no-repeat center top;">
+					<div class="slf-popup-stat">
+						<h3 class="number" style="font-size: 1000%;">23</h3>
+						<p>Countries where United Methodist Communications staff worked.</p>
+					</div>
+				</div>										
+			</section>
+			
+<!------------------- PATH ------------------->
+
+
+			
+			<section class="slf-section-1 slf-header">
+				<img src="http://s3.amazonaws.com/Website_Properties_UGC/mycom/slf-header.jpg" alt="United Methodist Church 2016 Annual Report" >
+			</section>
+			<section class="slf-section-2 slf-description" style="padding-top: 40px; font-size:150%; line-height: 170%;">
+				<h1>Journey Through 2016</h1>
+				<p style="font-size: 22px; line-height: 36px;">Click on photos &amp; milestones to learn how United Methodist Communications supports the work of the church around the world.</p>
+			</section>
+			<section class="slf-section-3 path-entry">
+				<div class="containedwidth">
+				    <div class="fourthwidth" style="margin-left: 20px;">
+						<img src="http://s3.amazonaws.com/Website_Properties_UGC/mycom/slf-path-arrow.jpg" alt="Start the journey here" />
+					</div>
+				</div>
+			</section>
+			<section class="slf-section-4">
+				<div class="containedwidth path-row-1">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/1.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="cube">
+								<h2>CHURCH LEADERS</h2>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/2.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-right"  style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cl-1.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/3.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-right" style="background:#e8aa23; color: #FFF; font-weight:900; font-size: 400%;line-height:70px;text-shadow: 4px 4px 0px #bc8919">
+								835
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/4.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-down" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cl-2.jpg') no-repeat; background-size: cover;">	
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-2">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/8.png" data-lightbox=>	
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-down-once rectangle-no-right"  style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cl-4.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/7.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-right" style="background:#8d8d35; color: #FFF; font-weight:900; font-size: 270%;line-height:70px;text-shadow: 4px 4px 0px #5b5b15">
+								3,396
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/6.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-right" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cl-3.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/5.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-up rectangle-no-top" style="background:#00a3bf; color: #FFF; font-weight:900; font-size: 350%;line-height:50px;text-shadow: 4px 4px 0px #126e8c;">
+								<span style="position:relative;top: -30px;">37,<br>650</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-3">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/9.png" data-lightbox=>	
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-top" style="margin-top: 0%; margin-right: 75%; background:#516171; color: #FFF; font-weight:900; font-size: 400%;line-height:35px;text-shadow: 4px 4px 0px #212c37">
+								4.2<br />
+								<span style="font-size: 50%;">million</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-4">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/10.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-up rectangle-no-top" style="margin-top: 0%; background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cl-5.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/11.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left"  style="background:#e8aa23; color: #FFF; font-weight:900; font-size: 400%;line-height:70px;text-shadow: 4px 4px 0px #bc8919">
+								989
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/12.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background:#00a3bf; color: #FFF; font-weight:900; font-size: 270%;line-height:50px;text-shadow: 4px 4px 0px #126e8c;">
+								1,142
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/13.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-down-once" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cl-6.jpg') no-repeat; background-size: cover;">	
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-5">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/14.png" data-lightbox=>
+						<div class="fourthwidth" style="margin-left: 75%;">
+							<div class="rectangle rectangle-no-top" style="margin-top: 0% !important; background:#e9213d; color: #FFF; font-weight:900; font-size: 200%;line-height:30px;text-shadow: 4px 4px 0px #900;">
+								1.53<br />million
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-6" style="position:relative;top:-30px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/18.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-down" style="background:#8d8d35; color: #FFF; font-weight:900; font-size: 350%;line-height:50px;text-shadow: 4px 4px 0px #5b5b15;">
+								120,<br />000
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/17.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-1.jpg') no-repeat; background-size: cover;">		
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/16.png" data-lightbox="arm6">
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background:#00a3bf; color: #FFF; font-weight:900; font-size: 270%;line-height:40px;text-shadow: 4px 4px 0px #126e8c;">
+								4.57<br /><span style="font-size: 75%;">million</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/15.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="cube" style="margin-left: -5px;">
+								<h2>CHURCH MEMBERS</h2>
+							</div>
+						</div>
+					</a>
+				</div>							
+				<div class="containedwidth path-row-7" style="position:relative;top:-30px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/19.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-up rectangle-no-top" style="margin-top: 0%;background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-2.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/20.png" data-lightbox="arm0">
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background:#e8aa23; color: #FFF; font-weight:900; font-size: 400%;line-height:70px;text-shadow: 4px 4px 0px #bc8919">
+								343
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/21.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-3.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/22.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-down-once" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-4.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-8">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/23.png" data-lightbox=>
+						<div class="fourthwidth" style="margin-left: 75%;">
+							<div class="rectangle rectangle-no-top" style="margin-top: -30px !important;background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-5.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-9">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/27.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-down" style="background:#e21e2d; color: #FFF; font-weight:900; font-size: 350%;line-height:50px;text-shadow: 4px 4px 0px #900;">
+								<span style="position: relative; top: 0px;">794,<br />446</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/26.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-6.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/25.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background:#00a3bf; color: #FFF; font-weight:900; font-size: 300%;line-height:40px;text-shadow: 4px 4px 0px #126e8c;">
+								21,<br />500
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/24.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-up rectangle-no-top" style="margin-right: 75%; background:#516171; color: #FFF; font-weight:900; font-size: 400%;line-height:35px;text-shadow: 4px 4px 0px #212c37">
+								724
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-10">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/28.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-up rectangle-no-top" style="background:#8d8d35; color: #FFF; font-weight:900; font-size: 250%;line-height:30px;text-shadow: 4px 4px 0px #5b5b15;">
+								<span style="position: relative; top: -10px;">
+									62.3<br />
+									<span style="font-size: 75%;">million</span>
+								</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/29.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-7.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/30.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/cm-8.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/31.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="cube" style="margin-left: -5px;">
+								<h2>THE<br/> WORLD</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-11">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/32.png" data-lightbox=>
+						<div class="fourthwidth" style="margin-left: 75%;">
+							<div class="rectangle rectangle-no-bottom" style="margin-top: -30px !important; background:#8d8d35; color: #FFF; font-weight:900; font-size: 300%;line-height:30px;text-shadow: 4px 4px 0px #5b5b15;">
+								<span style="position: relative; top: 20px;">
+									164<br>
+									<span style="font-size: 55%;">million</span>
+								</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-12" style="position:relative; top: -37px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/36.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-down" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tw-2.jpg') no-repeat; background-size: cover;">	
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/35.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background:#e21e2d; color: #FFF; font-weight:900; font-size: 300%;line-height:40px;text-shadow: 4px 4px 0px #900;">
+								<span style="position: relative; top: -10px;">
+									214,<br>
+									930
+								</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/34.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tw-1.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/33.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-up-once" style="background:#00a3bf; color: #FFF; font-weight:900; font-size: 400%;line-height:40px;text-shadow: 4px 4px 0px #126e8c;">
+								299
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-13" style="position:relative;top:-37px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/37.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-up rectangle-no-top" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tw-3.jpg') no-repeat; background-size: cover;">	
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/38.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="margin-right: 75%; background:#516171; color: #FFF; font-weight:900; font-size: 350%;line-height:40px;text-shadow: 4px 4px 0px #212c37">
+								<span style="position: relative; top: -10px;">
+									11,<br>
+									215
+								</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/39.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tw-4.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/40.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-down" style="background:#e8aa23; color: #FFF; font-weight:900; font-size: 300%;line-height:40px;text-shadow: 4px 4px 0px #bc8919">
+								<span style="position: relative; top: 10px;">
+									2.51<br>
+									<span style="font-size: 55%;">million</span>
+								</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-14" style="position: relative; top: -37px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/44.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-down" style="background:#e21e2d; color: #FFF; font-weight:900; font-size: 800%;line-height:70px;text-shadow: 4px 4px 0px #900;">
+								7
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/43.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="cube" style="margin-left: -5px;">
+								<h2>NEWS<br/>SERVICE</h2>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/42.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background:#00a3bf; color: #FFF; font-weight:900; font-size:370%;line-height:40px;text-shadow: 4px 4px 0px #126e8c;">
+								<span style="position:relative; top: -15px;">11,<br />540
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/41.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-up rectangle-no-top"  style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tw-5.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-15" style="position:relative;top:-37px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/45.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-up rectangle-no-top" style="background:#8d8d35; color: #FFF; font-weight:900; font-size: 400%;line-height:50px;text-shadow: 4px 4px 0px #5b5b15;">
+								<span style="position:relative;top: -30px;">20,<br />646</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/46.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/ns-1.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/47.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background:#e21e2d; color: #FFF; font-weight:900; font-size: 400%;line-height:70px;text-shadow: 4px 4px 0px #900;">
+								472
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/48.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-down" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/ns-2.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-16" style="position:relative;top:-55px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/52.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-down" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tt-2.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/51.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background:#8d8d35; color: #FFF; font-weight:900; font-size: 350%;line-height:50px;text-shadow: 4px 4px 0px #5b5b15;">		
+								104
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/50.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tt-1.jpg') no-repeat; background-size: cover;">
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/49.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="cube" style="margin-left: -5px;">
+								<h2>THE<BR />TEAM</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="containedwidth path-row-16" style="position:relative;top:-57px;">
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/53.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle left-corner-up rectangle-no-top" style="background:#00a3bf; color: #FFF; font-weight:900; font-size: 400%;line-height:50px;text-shadow: 4px 4px 0px #069;">
+								<span style="position:relative;top: -10px;">767</span>
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/54.png" data-lightbox=>
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-left" style="background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/tt-3.jpg') no-repeat; background-size: cover;">
+								
+							</div>
+						</div>
+					</a>
+					<a href="http://s3.amazonaws.com/Website_UMCom/Annual_Report/55.png" data-lightbox="arm5">
+						<div class="fourthwidth">
+							<div class="rectangle rectangle-no-x" style="background:#e8aa23; color: #FFF; font-weight:900; font-size: 400%;line-height:70px;text-shadow: 4px 4px 0px #bc8919;">
+								23
+							</div>
+						</div>
+					</a>
+						<div class="fourthwidth">
+							<div class="rectangle right-corner-down" style="background: #e21e2d; border: 5px solid #e21e2d;">
+							</div>
+						</div>
+				</div>
+				<div class="containedwidth path-row-17">
+						<div class="fourthwidth" style="margin-left: 75%;">
+							<div class="rectangle" style="margin-top: -57px !important;background: url('http://s3.amazonaws.com/Website_Properties_UGC/mycom/path-exit.jpg') no-repeat; background-size: contain;padding: 5px; border: none;">
+							</div>
+						</div>
+				</div>																								
+			</section>
+			<section class="slf-section-1 slf-header">
+				<img src="http://s3.amazonaws.com/Website_Properties_UGC/mycom/slf-footer.jpg" alt="United Methodist Church 2016 Annual Report" style="max-width: 65%;max-height: inherit; margin-bottom: 40px;" >
+			</section>
+		</div>
+		
+<!-- ------------------------ SCRIPTS ----------------------------- -->
+<script>
+</script>
+
+</body>
+</html>
+	
+
+

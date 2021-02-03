@@ -1,0 +1,322 @@
+body, #cmpt-wrapper, #cmpt-wrapper h1, #cmpt-wrapper h2, #cmpt-wrapper h3, #cmpt-wrapper h4{
+	margin: 0px; padding: 0px; font-family: 'Raleway', 'Montserrat', 'Helvetica Neue', helvetica, sans-serif; font-size: 14px; line-height: 26px;}
+#cmpt-wrapper ol{margin-left: 20px;margin-bottom: 20px;}
+#cmpt-wrapper p, #cmpt-wrapper ol li{font-size: 14px; line-height:26px;}
+#cmpt-wrapper .sidebar-section h3{font-size: 24px;}
+#cmpt-wrapper h3{font-size: 18px; line-height: 24px; margin-top: 15px;}
+#cmpt-wrapper h4{color: #e21e2d;font-size: 24px;margin-left: -20px;font-weight:900;margin-top: 30px;margin-bottom: 10px;}
+#cmpt-wrapper h4::before{content: url('http://s3.amazonaws.com/Website_UMCom/red-arrow.png');}
+#cmpt-wrapper .btn{font-family: 'Raleway', 'Montserrat', 'Helvetica Neue', helvetica, sans-serif;
+	background: #1c91b3;color: #FFF;padding: 5px 10px;font-weight: 900;border: none;letter-spacing: 1px; font-size: 20px;margin: 15px auto 0px; text-align: center;}
+#cmpt-wrapper a.btn, #cmpt-wrapper a.grey-button.btn{display: block !important;padding: 5px inherit !important;text-align:center !important;margin:0px auto;color: #FFF !important;}
+#cmpt-wrapper .btn:hover{background: #069;}
+#cmpt-wrapper .btn-red{background: #e21e2d;transition: background .25s ease-in-out;}
+#cmpt-wrapper p a{color: #069; font-weight: 700;}
+#cmpt-wrapper ul{margin: 15px 0px 0px;}
+#cmpt-wrapper ul li:last-child{margin-bottom: 20px !important;}
+#cmpt-wrapper h2{line-height: 34px;}
+#cmpt-wrapper button a{color: #FFF; text-decoration: none;}
+#cmpt-wrapper .btn-red:hover{background: #900;}
+#cmpt-wrapper .page-section, #cmpt-wrapper .page-section h2, #cmpt-wrapper .page-section p{text-align: left;}
+#cmpt-wrapper .cmpt-heading{
+	background: url("http://s3.amazonaws.com/Website_UMCom/cmpt-first.jpg") no-repeat center center;
+	background-size: cover;padding-bottom:20px;}
+#cmpt-wrapper .cmpt-heading h1{text-align: left;padding: 75px 0px 20px;color: #FFF;}
+#cmpt-wrapper .cmpt-heading h2{
+		font-family: 'Trade Gothic', 'Oswald', 'Bebas Neue', 'Steelfish', Verdana, helvetica, arial, sans-serif;
+		width: 100%;font-size: 30px;letter-spacing: 1px;text-shadow: -2px 2px 0px #000;opacity: 0.8;
+		background: #1c91b3;color: #FFF;text-align: left;padding: 10px 0px;margin-bottom: 20px;}
+@media (max-width: 960px){
+	#cmpt-wrapper .cmpt-heading h2{font-size: 20px !important;}
+	}	
+/* ===================== FOLDING SIZES =================== */	
+		
+	#cmpt-wrapper .fullwidth{width: 100%;clear: both;}
+	#cmpt-wrapper .containedwidth{max-width: 1170px;clear: both;margin: 0px auto;}
+	#cmpt-wrapper .fullwidth:after, #cmpt-wrapper .containedwidth:after, .plus-bkgrd:after{content: "";display: table;clear: both;}
+	#cmpt-wrapper .halfwidth{width: 50%;float:left;}
+	#cmpt-wrapper .thirdwidth{width: 33%;float: left;}
+	#cmpt-wrapper .twothirds{width: 66%;float: left;}
+	#cmpt-wrapper .fourthwidth{width: 25%;float: left;}
+	#cmpt-wrapper .tenthwidth{width: 10%;float:left;}
+	#cmpt-wrapper .ninetenths{width: 90%;float: left;}		
+	#cmpt-wrapper img{max-width: 90%;height: inherit;margin: 0px auto;}
+
+@media (max-width: 768px){
+	#cmpt-wrapper .halfwidth{width: 100% !important;}
+	#cmpt-wrapper .thirdwidth{width: 100% !important;}
+	#cmpt-wrapper .fourthwidth{width: 50% !important;}
+	#cmpt-wrapper .twothirds{width: 100% !important;}
+	#cmpt-wrapper .tenthwidth{width: 25% !important;}
+	#cmpt-wrapper .ninetenths{width: 90% !important;}
+	}	
+
+/*===================== HOME PAGE SPECIFIC ===================== */
+
+	#cmpt-wrapper .page-section{padding: 30px 10px 30px 50px;}
+	#cmpt-wrapper .page-section p{margin-top: 0px;}
+	#cmpt-wrapper .page-section-2 h2{color: #1c91b3;padding: 0px;margin: 0px;}
+	#cmpt-wrapper .red-form{background: #e21e2d;color: #FFF;height: 100px;}
+    #cmpt-wrapper .red-form h2{color: #FFF;}
+	#cmpt-wrapper .red-form ul{list-style: none;}
+	#cmpt-wrapper .page-section-2 p, #cmpt-wrapper .page-section-3 p{margin-top: 0px;}
+	#cmpt-wrapper .page-section-4 .halfwidth h3{color: #1c91b3;font-weight: 900;font-size: 24px;line-height: 24px;}
+	#cmpt-wrapper .page-section-4 .halfwidth p{margin-top: 5px;font-size: 16px;line-height: 24px;}
+	#cmpt-wrapper .page-section-4 h2, #cmpt-wrapper .page-section-5 h2{padding-top: 0px;weight: 900;}
+	#cmpt-wrapper .page-section-4 .plus-bkgrd{background: url('http://s3.amazonaws.com/Website_UMCom/plus.jpg') no-repeat center center;/* background-size: contain; */margin-top: 30px;}
+	@media (max-width: 780px){
+		#cmpt-wrapper .page-section-4 .plus-bkgrd{background: none;}
+		}
+		
+	#cmpt-wrapper .page-section-5{background: #ededee;}
+	#cmpt-wrapper .page-section-5 h2{color: #1c91b3;}
+
+/*-------------------------------------------------- MARKETO STYLE OVERWRITES --------------------------------------*/
+	#cmpt-wrapper #mktoForm_1281{margin-top: -10px;}
+	#cmpt-wrapper #mktoForm_1281 .mktoButt0n{width:100% !important;}
+	#cmpt-wrapper .mktoButtonWrap{position:relative; top: -110px; left: 200px;}	
+	#cmpt-wrapper .mktoForm .mktoButtonWrap.mktoDownloadButton button.mktoButton {width: 100% !important;}
+	#cmpt-wrapper .mktoForm .mktoError .mktoErrorMsg {margin-top: 7px !important;}
+	#cmpt-wrapper p.pref-center-text{color: #900 !important; font-weight: 700; position: relative; top: -100px; right:-340px;}
+	#cmpt-wrapper p.pref-center-text a{color: #900; text-decoration:underline;}
+	#cmpt-wrapper .mktoForm .mktoButtonWrap.mktoDownloadButton button.mktoButton{border-radius: 15px !important; background: #FFF !important;text-transform:lowercase !important; color: #e21e2d !important;text-shadow:none !important;font-size: 20px; padding: 0px 10px;}
+
+/*===================== CONTENT PAGES ========================== */
+	#cmpt-wrapper .section-heading{background: #eaeaea;}
+	#cmpt-wrapper .section-heading h2{font-size: 36px; color: #e21e2d; padding: 20px 0px 0px; margin-bottom: none; line-height: 36px;}
+/*===================== CONTENT PAGES ========================== */
+	#cmpt-wrapper #cmpt-subnav-wrapper{background: #000;}
+	#cmpt-wrapper #cmpt-subnav-wrapper a{color: #FFF;text-decoration: none;}
+	#cmpt-wrapper .cmpt-subnav{height: 40px;line-height: 42px;}
+	#cmpt-wrapper .subnav-logo{height: 42px;width: intrinsic;padding-top: 2px;}
+	#cmpt-wrapper .phase-nav{color: #FFF;text-align: center;text-transform: uppercase;font-size: 16px;padding: 15px 20px;float:left;}
+	#cmpt-wrapper .phase-nav-active{background: #e21e2d;}
+	#cmpt-wrapper .sub-subnav{background: #e21e2d;height: 42px;line-height: 42px;}
+	#cmpt-wrapper .nav-list{list-style: none;color: #FFF;margin-top: -10px !important;background: #e21e2d;}
+	#cmpt-wrapper .nav-list .nav-item{color: #FFF;line-height: 42px;float: left;font-size: 12px;margin: 0px 15px;letter-spacing: 0px;}
+	#cmpt-wrapper .nav-list .nav-item a{color: #FFF;text-decoration: none;}
+	#cmpt-wrapper .nav-item:hover{font-weight: 700;}
+	#cmpt-wrapper .nav-item.active{font-weight: 700;text-decoration: underline;}
+	#cmpt-wrapper section.page-section{padding: 10px 30px 10px 30px; margin-bottom: 30px;}
+	#cmpt-wrapper .action-text{margin-top: 20px;}
+	#cmpt-wrapper .action-text p, #cmpt-wrapper .action-text h2, #cmpt-wrapper .action-text h3{padding-left: 20px !important;}
+	#cmpt-wrapper h2{color: #1c91b3;font-size: 44px;}
+	#cmpt-wrapper .action-text h3{font-weight: 400;}
+	#cmpt-wrapper .before-you-begin .blue-form{background: #1c91b3;padding: 20px !important;margin: 20px !important;}
+	#cmpt-wrapper .before-you-begin .blue-form p{color: #FFF;text-align: center !important;font-size: 30px !important;}
+	#cmpt-wrapper #cmpt-toolbox-nav .blue-form form{margin: 0px auto;}
+	#cmpt-wrapper .sidebar-section button a{color: #FFF;}
+/*====================== LIGHTBOX ============================*/
+	#cmpt-wrapper .cmpt-lightbox .row:after {content: "";display: table;clear: both;}
+	#cmpt-wrapper .cmpt-lightbox .column {float: left;width: 25%;}
+/* The Modal (background) */
+	#cmpt-wrapper .cmpt-lightbox .modal {display: none;position: fixed;z-index: 4; padding-top: 50px;left: 0;
+  top: 105;width: 80%;height: 50%;overflow: auto;background: rgba(0, 0, 0, 0.8); margin: 10%; border-radius: 20px; border: 3px solid #FFF; box-shadow: 0px 0px 10px #000;}
+/* Modal Content */
+	#cmpt-wrapper .cmpt-lightbox .modal-content {position: relative;background-color: none;margin: auto;padding: 0;width: 90%;max-width: 1200px;}
+/* The Close Button */
+	#cmpt-wrapper .cmpt-lightbox .close {color: white;position: absolute;top: 10px;right: 25px;font-size: 35px;font-weight: bold;}
+	#cmpt-wrapper .cmpt-lightbox .close:hover, #cmpt-wrapper .cmpt-lightbox .close:focus {color: #999;text-decoration: none;cursor: pointer;}
+	#cmpt-wrapper .cmpt-lightbox .mySlides {display: none;}
+/* Next & previous buttons */
+	#cmpt-wrapper .cmpt-lightbox .prev, #cmpt-wrapper .cmpt-lightbox .next {cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -50px;
+  	color: white;font-weight: bold;font-size: 20px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;
+  	-webkit-user-select: none;}
+/* Position the "next button" to the right */
+	#cmpt-wrapper .cmpt-lightbox .next {right: 0;border-radius: 3px 0 0 3px;}
+/* On hover, add a black background color with a little bit see-through */
+	#cmpt-wrapper .cmpt-lightbox .prev:hover, #cmpt-wrapper .cmpt-lightbox .next:hover {background-color: rgba(0, 0, 0, 0.8);transition: visibility 0s, opacity 0.5s linear;}
+/* Number text (1/3 etc) */
+	#cmpt-wrapper .cmpt-lightbox .numbertext {color: #f2f2f2;font-size: 12px;padding: 8px 12px;position: absolute;top: 0;}
+	#cmpt-wrapper .cmpt-lightbox .caption-container {text-align: center;background-color: black;margin: 0px 10px; padding: 2px 16px;color: white;}
+	#cmpt-wrapper .cmpt-lightbox img.demo {opacity: 0.6;}
+	#cmpt-wrapper .cmpt-lightbox .active, .cmpt-lightbox .demo:hover {opacity: 1;transition: visibility 0s, opacity 0.5s linear;}
+	#cmpt-wrapper .cmpt-lightbox img.hover-shadow {transition: 0.3s}
+	#cmpt-wrapper .cmpt-lightbox .hover-shadow:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+	#cmpt-wrapper .cmpt-lightbox{border-top: 1px dotted #666;border-bottom: 1px dotted #666;padding: 10px 20px !important;background: #eaeaea;}
+	#cmpt-wrapper .mySlides img{margin: 0px auto !important;}
+	#cmpt-wrapper .sidebar-heading{font-size: 36px; line-height:58px; color: #999; font-weight: 900;text-align: center !important;}
+	#cmpt-wrapper .sidebar-section{background: #eaeaea; padding: 20px !important; border-bottom:dashed 3px #FFF;margin:0px 20px 0px;}
+	#cmpt-wrapper .sidebar-section:last-child{border-bottom: none;}
+	#cmpt-wrapper .sidebar-section p, .sidebar-section button a{text-align:center !important;margin: 0px auto;}
+	#cmpt-wrapper .sidebar-section h3{font-size: 24px; color: #333; display: block;padding: 10px 0px !important;background-size:contain;}
+	#cmpt-wrapper .sidebar-section hr{border: 3px solid #FFF;}
+	#cmpt-wrapper .sidebar-section ol li{line-height: 24px;}
+        #cmpt-wrapper  .course-content ul li{margin-left: 15px; line-height: 24px;}
+	#cmpt-wrapper .heading-tools{background: url(http://s3.amazonaws.com/Website_UMCom/tool.jpg) no-repeat right top; text-align: center !important;}
+	#cmpt-wrapper .heading-tips{background: url(http://s3.amazonaws.com/Website_UMCom/idea.jpg) no-repeat right top;}
+	#cmpt-wrapper .heading-action{background: url(http://s3.amazonaws.com/Website_UMCom/action.jpg) no-repeat right top;}
+	#cmpt-wrapper .grey-button{padding: 7px 0px;width: 100%;margin: 0px auto;background: #333; border-radius: 0px; border: 0px;color: #FFF;font-weight: 900;text-align: center !important;}
+	#cmpt-wrapper .grey-button:hover{background: #999;}
+	#cmpt-wrapper .grey-button a{color: #FFF; text-decoration: none;display:block;}
+	#cmpt-wrapper .static-slide-btns{position:relative; z-index: 1 !important;}
+	/* The side navigation menu */
+#cmpt-wrapper .cmpt-sidenav {
+    height: 100%;padding-top:250px; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	}
+#cmpt-wrapper .cmpt-mobile-nav-open, #cmpt-wrapper .cmpt-mobile-toolbox-open{font-weight: 900; border-radius: 0px; position: relative;line-height: 40px;text-align:center;width:100%;
+	position: fixed;}
+	#cmpt-wrapper .cmpt-mobile-toolbox-open{}
+#cmpt-wrapper .cmpt-mobile-nav-open img, #cmpt-wrapper .cmpt-mobile-toolbox-open img{position:absolute; top: 7px;height: 25px;width:25px;right:7px;}
+/* The navigation menu links */
+#cmpt-wrapper .cmpt-sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+#cmpt-wrapper .cmpt-sidenav a:hover, #cmpt-wrapper .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+#cmpt-wrapper .closebtn img{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    float: right;
+}
+#cmpt-wrapper button img{float:right;}
+
+#cmpt-wrapper div.cleared{  
+		content: "";
+		display: table !important;
+		clear: both;}
+#cmpt-wrapper .cmpt-continue-gear{height:20px;width:20px;float:right;position:relative;top:-3px;}
+#cmpt-wrapper .cmpt-lb img{margin-bottom: 10px;box-shadow:0px 0px 2px #000;}
+#cmpt-wrapper .grey-block{padding: 15px; background:#eaeaea;color:#000;margin: 5px 0px 15px;clear:both;display:block;}
+
+
+
+@media (max-width: 500px){
+#cmpt-wrapper button.hidden-desktop{font-size: 12px !important;}
+#cmpt-wrapper button.static img{height: 30px; width: 30px;margin-top: 10px;}
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#cmpt-wrapper #main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+   #cmpt-wrapper .cmpt-sidenav {padding-top: 15px;}
+   #cmpt-wrapper .cmpt-sidenav a {font-size: 18px;}
+}
+
+@media (max-width:1000px){
+	#cmpt-wrapper .mktoButtonWrap{position:relative; top: 0px; left: -46px;}
+	#cmpt-wrapper p.pref-center-text{top: -50px; right: 125px;}
+	#cmpt-wrapper .red-form{height: 145px;}
+	#cmpt-wrapper .cmpt-mkto{width:30%;}
+	#cmpt-wrapper .cmpt-form-text{width:70%;}
+	#cmpt-wrapper .phase-nav a{font-size: 14px;}
+	}		
+@media (max-width: 768px){
+        body{margin-top: 0px;}
+   #cmpt-wrapper #mktoForm_1281[style]{margin: 0px auto !important;}
+   #cmpt-wrapper #cmpt-wrapper p.pref-center-text{top: 0px; right: 0px;}
+   #cmpt-wrapper #cmpt-wrapper .red-form{height: 280px;}
+	#cmpt-wrapper #cmpt-wrapper .page-section{padding: 0px 20px 20px 20px;}
+	#cmpt-wrapper .action-heading{background: #e21e2d; width: 100%;padding: 6%; color: #FFF;}
+	#cmpt-wrapper .action-heading h2{color: #FFF !important;text-shadow: 2px 2px 0px #900;}
+	#cmpt-wrapper .action-heading h3{color: #900; font-weight: 900 !important; text-transform: uppercase;}
+	#cmpt-wrapper .before-you-begin .blue-form{margin: 0px !important;}
+	#cmpt-wrapper .phase-count{display: none;}
+	#cmpt-wrapper .section-heading{margin-bottom: 20px;}
+	#cmpt-wrapper .section-heading h2{padding-top: 0px;margin-top: -15px;font-size: 32px;}
+	#cmpt-wrapper .section-heading span{padding-top: 20px;}
+	#cmpt-wrapper #cmpt-mobile-nav, #cmpt-wrapper #cmpt-toolbox-nav{border-right: 2px solid #FFF; box-shadow: 0px 0px 3px #000;}
+	#cmpt-wrapper #cmpt-wrapper h2{line-height: 32px;}
+	#cmpt-wrapper h4 {margin-left: 0px; margin-top: 30px !important;}
+	#cmpt-wrapper .sidebar-heading{font-size: 30px;text-align: left !important; padding: 0px 20px;}
+	#cmpt-wrapper .cmpt-sidenav{padding-top: 140px;}
+	#cmpt-wrapper .cmpt-sidenav a{padding:0px;font-size:20px;}
+	#cmpt-wrapper .cmpt-sidenav .btn-red{padding: 10px 20px !important;}
+	#cmpt-wrapper .action-text{padding-right: 20px;}
+	#cmpt-wrapper .action-text img{display:none;}
+	#cmpt-wrapper .closebtn{font-size: 14px; font-weight: 900;line-height: 48px;}
+	#cmpt-wrapper hr{margin-bottom: 20px;margin-top: 0px;padding-top:0px;}
+	#cmpt-wrapper .cmpt-nav-list{margin-left: 20px;}
+	#cmpt-wrapper .cmpt-nav-list-phase{margin-top: 40px !important; border-top: 1px solid #666;color: #0FB6E0 !important;font-weight:bold;text-transform:uppercase;font-family:'Oswald','Bebas Neue','Open Sans',sans-serif;}
+	#cmpt-wrapper .cmpt-nav-list-phase:hover{color: #e21e2d;}
+	#cmpt-wrapper .cmpt-nav-list .cmpt-nav-list-item{padding-left: 20px;padding-top: 10px;font-weight: 700; font-size: 14px;}
+	#cmpt-wrapper .cmpt-nav-list-item-active{color: #FFF !important;}
+	#cmpt-wrapper .cmpt-mobile-logo img.cmpt-mobile-logo{max-width:100% !important;}
+        .main.full.cf.dark-opaque{top: 0px; border-bottom: 2px solid #FFF;}
+	}
+@media (max-width: 680px){
+        #cmpt-wrapper .cmpt-sidenav{padding-top: 55px;}
+}	
+@media (max-width: 550px){
+         .main.full.cf.dark-opaque{border-bottom: 2px solid #FFF;}
+}			
+@media (max-width: 500px){
+	body{margin-top: 0px;}
+    #cmpt-wrapper .red-form{height: 420px;}
+    #cmpt-wrapper #mktoForm_1281{text-align: center;}
+	}
+/*----------------------- HIDDEN CLASSES --------------------*/	
+@media (max-width: 768px){
+	#cmpt-wrapper .hidden-tablet{display: none !important;}
+	}
+@media (max-width: 468px){
+	#cmpt-wrapper .hidden-phone{display: none !important;}
+	}
+@media (min-width: 768px){
+	#cmpt-wrapper .hidden-desktop{display: none !important;}
+	}
+@media only screen and (max-width: 59.875em){
+       #main {
+        margin: 0 0px !important;
+	}
+}
+
+/*-------------------- SECTION SPECIFIC STYLES ------------*/
+
+#cmpt-wrapper .sco-sections{padding: 15px;display:block;border-left: 5px solid #CCC;background: #eaeaea;margin: 15px 0px !important;}
+#cmpt-wrapper .sco-h3{color: #1c91b3;}
+
+/*-------------------- NATIVE EE STYLES / OVERRIDES -------*/
+
+.cmpt-mobile-logo{display: none;}
+.logo-offset{top: 0px;}
+button.hidden-desktop{background: #CCC;}
+.breadcrumbs.centered-elem.full.cf{display:none;}
+
+/*-------------------- MARKETO FORM OVERRIDES --------------*/
+
+#cmpt-wrapper .blue-form .mktoForm .mktoButtonWrap.mktoDownloadButton button.mktoButton {color: #e21e2d;}
+#cmpt-wrapper .blue-form .mktoAsterix{color: #FFF;}
+#cmpt-wrapper .blue-form .mktoButtonWrap{position: relative;top: 0px;left: -10px;}
+#cmpt-wrapper .blue-form ::-webkit-input-placeholder, #cmpt-wrapper .blue-form ::-moz-placeholder{color:#333 !important;}
+#cmpt-wrapper .blue-form input{width: 140% !important;}
+#cmpt-wrapper .blue-form input:first-child{margin-top: 20px;}
+#cmpt-wrapper .blue-form form{top: 20px;left:10%;padding-bottom: 25px;}
+@media (max-width: 1080px){
+#cmpt-wrapper .blue-form input{width: 130% !important;}	
+#cmpt-wrapper .blue-form form{top: 20px;left:5%;padding-bottom: 25px;}	
+#cmpt-wrapper .blue-form .mktoButtonWrap{position: relative;top: 0px;left: -20px;}
+}
+@media (max-width: 960px){
+#cmpt-wrapper .blue-form input{width: 100% !important;}	
+#cmpt-wrapper .blue-form form{top: 20px;left:0%;padding-bottom: 25px;}
+#cmpt-wrapper .blue-form .mktoButtonWrap{top: 0px;left: -50px;
+}	
+}
